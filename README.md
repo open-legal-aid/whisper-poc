@@ -25,6 +25,27 @@ python download_models_fixed.py
 python web_server.py
 \`\`\`
 
+##  Modelle
+
+Die Whisper-Modelle werden beim **ersten Start automatisch heruntergeladen**.
+Das kann **5-10 Minuten dauern**.
+
+### Warum nicht in Git?
+
+Die Modelle sind zu groß für Git:
+- **small**: 466 MB
+- **medium**: 1.5 GB  
+- **large**: 2.9 GB
+
+Sie werden stattdessen über `download_models_fixed.py` verwaltet und beim Serverstart automatisch heruntergeladen.
+
+### Größe ändern
+
+In `web_server.py`:
+
+model = whisper.load_model('small') # oder 'medium', 'large'
+
+
 ### 4. Öffne Browser
 
 http://localhost:5000

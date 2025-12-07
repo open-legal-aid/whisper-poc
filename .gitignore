@@ -1,0 +1,28 @@
+# Große Modelle (nicht ins Git!)
+models/whisper/*.pt
+models/whisper/*.onnx
+*.bin
+*.safetensors
+
+# Cache & Temp
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+Thumbs.db
+
+# Uploads (user-generated)
+uploads/*
+!uploads/.gitkeep
+
+# Virtual Environments
+venv/
+env/

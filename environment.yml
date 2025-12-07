@@ -1,0 +1,17 @@
+name: whisper-poc
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch::pytorch::*[version='2.0.*']
+  - pytorch::torchaudio::*
+  - pytorch::pytorch-cuda=11.8
+  - pip
+  - pip:
+    - flask==3.0.0
+    - flask-cors==4.0.0
+    - openai-whisper==20231214
+    - sounddevice==0.4.6
+    - soundfile==0.13.1

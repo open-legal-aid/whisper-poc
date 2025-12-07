@@ -1,8 +1,8 @@
 # Große Modelle (nicht ins Git!)
 models/whisper/*.pt
+models/whisper/*.bin
 models/whisper/*.onnx
-*.bin
-*.safetensors
+models/whisper/*.safetensors
 
 # Cache & Temp
 __pycache__/
